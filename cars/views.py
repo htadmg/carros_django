@@ -1,3 +1,12 @@
 from django.shortcuts import render
+from cars.models import Car
 
-# Create your views here.
+
+def cars_views(request):
+    cars = Car.objects.filter(brand=4)
+
+    return render(
+        request,
+        'cars.html',
+        {'cars' : cars }
+    )
