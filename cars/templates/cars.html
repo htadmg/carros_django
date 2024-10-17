@@ -17,9 +17,9 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               {% if car.photo %}
-                <img src="{{ car.photo.url }}" class="card-img-top" alt="{{ car.model }} - {{ car.brand }}">
+                <img src="{{ car.photo.url }}" class="card-img-top container-fluid mt-3 mb-3" alt="{{ car.model }} - {{ car.brand }}">
               {% else %}
-                <img src="path/para/imagem/default.jpg" class="card-img-top" alt="{{ car.model }} - {{ car.brand }}">
+                <img src="path/para/imagem/default.jpg" class="card-img-top container-fluid mt-3 mb-3" alt="{{ car.model }} - {{ car.brand }}">
               {% endif %}
               <div class="card-body">
                 <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>

@@ -1,0 +1,7 @@
+
+/*estilo do cars*/
+
+.card-img-top{
+    height: 200px;
+    object-fit: contain;
+}
