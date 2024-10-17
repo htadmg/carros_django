@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form method="post">
+    <form method="post" class="p-3 border rounded">
         {% csrf_token %}
 
-        <div class="mb-3">
+        <div class="mb-3 d-flex flex-column">
             {{ login_form.username.errors }}
             <label class="form-label" >Usuário:</label>
             {{ login_form.username }}
         </div>
-        <div class="mb-3">
+        <div class="mb-3 d-flex flex-column">
             {{ login_form.password.errors }}
             <label class="form-label" >Senha:</label>
             {{ login_form.password }}

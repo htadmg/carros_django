@@ -1,11 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data" class="p-3 border rounded">
         {% csrf_token %}
-        <table>
-            {{ form.as_table }}
-        </table>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.model.errors }}
+            <label class="form-label" >Modelo:</label>
+            {{ form.model }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.brand.errors }}
+            <label class="form-label" >Marca:</label>
+            {{ form.brand }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.factory_year.errors }}
+            <label class="form-label" >Ano de Fabricação:</label>
+            {{ form.factory_year }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.model_year.errors }}
+            <label class="form-label" >Ano do Modelo:</label>
+            {{ form.model_year }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.plate.errors }}
+            <label class="form-label" >Placa do Carro:</label>
+            {{ form.plate }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.value.errors }}
+            <label class="form-label" >Valor de Venda:</label>
+            {{ form.value }}
+        </div>
+        <div class="mb-3 d-flex flex-column">
+            {{ form.photo.errors }}
+            <label class="form-label" >Foto do Carro:</label>
+            {{ form.photo }}
+        </div>
         <input type="submit" value="Cadastrar" class="btn btn-primary">
     </form>
 {% endblock content %}
