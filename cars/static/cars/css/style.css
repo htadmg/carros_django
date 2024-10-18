@@ -5,3 +5,8 @@
     height: 200px;
     object-fit: contain;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
