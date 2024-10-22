@@ -34,6 +34,12 @@
             <label class="form-label" >Preço:</label>
             {{ form.value }}
         </div>
+        
+        <div class="mb-3 d-flex flex-column">
+            {{ form.bio.errors }}
+            <label class="form-label" >Bio:</label>
+            {{ form.bio }}
+        </div>
         <div class="mb-3 d-flex flex-column">
             {{ form.photo.errors }}
             <label class="form-label" >Foto do Carro:</label>

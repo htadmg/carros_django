@@ -30,6 +30,13 @@
                     <th scope="row">Preço</th>
                     <td>{{ object.value }}</td>
                 </tr>
+                
+                <tr>
+                    {% if object.bio %}
+                        <th scope="row">Bio</th>
+                        <td>{{ object.bio }}</td>
+                    {% endif %}
+                </tr>
             </tbody>
         </table>
     </div>
