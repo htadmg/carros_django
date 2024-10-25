@@ -60,4 +60,22 @@ Aplique as migrações para configurar o banco de dados:
 ```bash
 python manage.py migrate
 ```
+
+Crie um super usuário:
+
+```bash
+python manage.py createsuperuser 
+```
+
+### Iniciar o Servidor de Desenvolvimento
+
+Inicie o servidor de desenvolvimento com o comando:
+
+```bash
+python manage.py runserver
+```
+### Acessar o Projeto
+Um banco de dados SQLite será criado localmente chamado db.sqlite3. Para utilização em produção, recomenda-se um banco de dados mais robusto, ex.: PostgreSQL, MySQL, Oracle, etc.
+
+Abra um navegador e vá para http://127.0.0.1:8000/ para ver o aplicativo em funcionamento. Você pode acessar o painel administrativo em http://127.0.0.1:8000/admin/ usando as credenciais do superusuário que você criou.
    
