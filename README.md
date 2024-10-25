@@ -46,5 +46,18 @@ source .venv/bin/activate
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```   
+```
+
+3. **Instale as dependências**
+```bash
+pip install -r requirements.txt
+```
+
+## Configuração do Banco de Dados
+
+Aplique as migrações para configurar o banco de dados:
+
+```bash
+python manage.py migrate
+```
    
