@@ -11,6 +11,7 @@ urlpatterns = [
     path('register/', register_views, name='register'),
     path('login/', login_views, name='login'),
     path('logout/', logout_views, name='logout'),
+    path('', CarsListView.as_view(), name='home'), 
     path('cars/', CarsListView.as_view(), name='cars_list'),
     path('new_car/', NewCarCreateView.as_view(), name='new_car_views'),
     path('car/<int:pk>/', CarDetailView.as_view(), name='car_detail'),
