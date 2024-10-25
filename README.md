@@ -20,3 +20,31 @@ Este projeto é uma aplicação Django para gerenciar o cadastro de carros e sua
 ## Como Configurar o Projeto
 
 Para executar este projeto localmente, siga os passos abaixo:
+
+1. **Clone o Repositório**
+- Usando HTTPS:
+```bash
+git clone https://github.com/htadmg/carros_django.git
+```
+- Usando SSH:
+```bash
+git clone git@github.com:htadmg/carros_django.git
+```
+- Navegue até o diretório do projeto:
+```bash
+cd .\carros_django
+```
+
+2. **Crie e Ative um Ambiente Virtual (opcional, mas recomendado)**
+- **Para Linux/MacOS:**
+```bash
+python -m .venv venv
+source .venv/bin/activate
+```
+
+- **Para Windows:**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```   
+   
