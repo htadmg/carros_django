@@ -12,12 +12,13 @@ class CarsListView(ListView):
     context_object_name = 'cars'
 
     def get_queryset(self):
-        cars =  super().get_queryset().order_by('model')
+        cars = super().get_queryset().order_by('model')
         search = self.request.GET.get('search')
         if search:
             cars = cars.filter(model__contains=search)
         return cars
-    
+
+
 class CarDetailView(DetailView):
     model = Car
     template_name = 'car_detail.html'
@@ -46,4 +47,3 @@ class CarDeleteView(DeleteView):
     model = Car
     template_name = 'car_delete.html'
     success_url = '/cars/'
-    
